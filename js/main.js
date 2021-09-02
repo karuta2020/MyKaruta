@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 {
   const btn = document.getElementById('btn');
 
@@ -15,10 +15,10 @@
   //札に触れても反応しないようにする（基本設定）
   let isAnswered = true;
 
-
+import { karuta } from "./sub.js"; 
 
   //配列データの宣言(シャッフル関数始動)
-  const karuta = shuffle([
+ /*  const karuta = shuffle([
     {
       clue: "Amazing giant green trees in a park with an ocean view.",
       efuda: "images/a.png",
@@ -71,10 +71,10 @@
     },
 
   ]).splice(0, 5);
-  //↑のsplice絵札の表示枚数を設定（開始場所, 採用枚数）
+  //↑のsplice絵札の表示枚数を設定（開始場所, 採用枚数） */
 
 
-
+ 
   //----------シャッフル関数----------
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
